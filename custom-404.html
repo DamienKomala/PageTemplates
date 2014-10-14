@@ -1,9 +1,8 @@
-<img src="/assets/images/404-page-not-found.jpg" class="img-polaroid" alt="page not found"/> 
-<cfoutput>
-	<ul id="menu" class="sitemap" style="list-style:none;">
-		<cfinclude template="includes/sitemap.txt">
-	</ul>
+<img src="/assets/images/404-page-not-found.jpg" class="img-polaroid" alt="page not found"/> <cfoutput>
+	<cfinclude template="includes/sitemap.txt">
 </cfoutput> 
+
+<!--Add this to the Custom.js--> 
 <script>
 $(document).ready(function($) {
 	$('#menu ul').hide();
