@@ -1,0 +1,58 @@
+<div class="well">
+	<div class="carousel slide" id="resultsCarousel">
+		<div class="carousel-inner">
+			<div class="item active"><span class="result">$750,000</span> <span class="result-text"><a href="results.html">Settlement for an EMT Injured at Work</a></span></div>
+			<div class="item"><span class="result">$261,300</span> <span class="result-text"><a href="results.html">Settlement for a Worker with an Injured Back</a></span></div>
+			<div class="item"><span class="result">$70,215</span> <span class="result-text"><a href="results.html">Settlement for an On-the-Job Vehicle Accident</a></span></div>
+		</div>
+	</div>
+</div>
+
+
+
+<!-- Here's the jQuery to be added to the custom.js: -->
+
+<script>
+/* ------------------- Animated Carousel --------------------- */
+
+		$('#resultsCarousel').carousel({
+			interval: 8000
+		})
+		
+</script>
+
+
+<!-- CSS to be added to the local.css -->
+
+<style>
+/*********************************************************************
+	Results Carousel
+*********************************************************************/
+
+#resultsCarousel  {
+	font-family:"Times New Roman",Times,serif;
+    font-style: italic;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 0;
+}
+#resultsCarousel .result {
+	border-bottom: 4px solid #003168;
+    color: #003168;
+    display: inline-block;
+    font-size: 40px;
+}
+#resultsCarousel .result-text, #resultsCarousel .result-text a {
+	font-size:16px;
+	color: #777;
+}
+#resultsCarousel .result-text a:hover {
+	text-decoration:none;
+}
+#resultsCarousel .item {
+	padding: 20px 0 0;
+}
+.well #resultsCarousel .item {
+	padding: 0;
+}
+</style>
